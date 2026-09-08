@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-09-08T22:38:01Z",
+  "packages": {
+    "Microsoft.Extensions.Configuration.Abstractions": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Microsoft.Extensions.DependencyInjection": {
+      "dependencies": [
+        "Microsoft.Extensions.DependencyInjection.Abstractions"
+      ],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Microsoft.Extensions.Hosting.Abstractions": {
+      "dependencies": [
+        "Microsoft.Extensions.Configuration.Abstractions",
+        "Microsoft.Extensions.DependencyInjection.Abstractions",
+        "Microsoft.Extensions.FileProviders.Abstractions",
+        "Microsoft.Extensions.Logging.Abstractions"
+      ],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Microsoft.Extensions.Http": {
+      "dependencies": [
+        "Microsoft.Extensions.DependencyInjection.Abstractions",
+        "Microsoft.Extensions.Logging.Abstractions",
+        "Microsoft.Extensions.Options"
+      ],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Microsoft.Extensions.Logging": {
+      "dependencies": [
+        "Microsoft.Extensions.DependencyInjection",
+        "Microsoft.Extensions.DependencyInjection.Abstractions",
+        "Microsoft.Extensions.Logging.Abstractions",
+        "Microsoft.Extensions.Options"
+      ],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Microsoft.Extensions.Logging.Abstractions": {
+      "dependencies": [
+        "Microsoft.Extensions.DependencyInjection.Abstractions"
+      ],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Microsoft.Extensions.Options": {
+      "dependencies": [
+        "Microsoft.Extensions.DependencyInjection.Abstractions",
+        "Microsoft.Extensions.Logging.Abstractions"
+      ],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    },
+    "Serilog": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "3.1.1"
+    },
+    "Serilog.Extensions.Hosting": {
+      "dependencies": [
+        "Microsoft.Extensions.DependencyInjection",
+        "Microsoft.Extensions.DependencyInjection.Abstractions",
+        "Microsoft.Extensions.Hosting.Abstractions",
+        "Microsoft.Extensions.Logging",
+        "Microsoft.Extensions.Logging.Abstractions",
+        "Serilog"
+      ],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "framework": "net9.0",
+        "registry_url": "https://api.nuget.org/v3/index.json"
+      },
+      "version": "8.0.0"
+    }
+  },
+  "pm": "nuget",
+  "pm_version_tested": "6.8.0",
+  "pm_version_under_test": "9.0.20",
+  "root": {
+    "dependencies": [
+      "Microsoft.Extensions.Http",
+      "Serilog.Extensions.Hosting"
+    ],
+    "name": "DotnetSdkVersionProbe",
+    "version": "1.0.0"
+  },
+  "schema_version": "1.2",
+  "source_file": "src/DotnetSdkVersionProbe/DotnetSdkVersionProbe.csproj",
+  "warnings": [
+    "Probe B of pair version-pm-dotnet-sdk-net8-vs-net9. Sibling Probe A uses net8.0 / pm_version_under_test=8.0.404 and includes System.Diagnostics.DiagnosticSource as a transitive dep.",
+    "System.Diagnostics.DiagnosticSource is intentionally absent from this tree: absorbed into .NET 9 BCL, not emitted as a dep node in project.assets.json generated by SDK 9.0.20.",
+    "restoreAuditProperties block present in project.assets.json (SDK 9 feature) must not be interpreted as dependency nodes by the UA."
+  ]
+}

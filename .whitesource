@@ -1,0 +1,8 @@
+{
+  "scanSettings": {
+    "configMode": "AUTO",
+    "versioning": {
+      "dotnet": "9.0.20"
+    }
+  }
+}
